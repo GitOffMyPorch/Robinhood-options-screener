@@ -1,6 +1,12 @@
 # Robinhood-options-screener
-Screens options data to find the best options to sell for theta-gangers,
-works for cash-secured-puts and covered-calls. Gets the "percent win" which is the percent return on the money it would require to secure a put or cover a call (Ex: premium received / cash required to buy 100 shares or secure a put = percent win). Gets the probability of the trade going south i.e. "Probability Lose" using delta as a probability indicator. Gets the strike price of the option to sell. Gets the option contract price per share. Gets the price of the stock. Gets the ticker symbol of the stock to sell a call/put on.
+Screens options data to find the best options to sell for theta-gangers, works for cash-secured-puts and covered-calls. 
+
+* Gets the "percent win" which is the percent return on the money it would require to secure a put or cover a call (Ex: premium received / cash required to buy 100 shares or secure a put = percent win). 
+* Gets the probability of the trade going south i.e. "Probability Lose" using delta as a probability indicator. 
+* Gets the strike price of the option to sell. 
+* Gets the option contract price per share. 
+* Gets the price of the stock. 
+* Gets the ticker symbol of the stock to sell a call/put on.
 
 # Modifications
 If you want to modify the code or extend the usage beyond what is provided here then you will need to download the Source Code file. This project requires the "robin_stocks" library be added so that the Robinhood API can be accessed. This should be relatively simple to do with the command "pip install robin-stocks". You can visit the robin stocks github page here: https://github.com/jmfernandes/robin_stocks and the documentation here: https://robin-stocks.readthedocs.io/en/latest/
