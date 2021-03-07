@@ -5,9 +5,7 @@ import robin_stocks.robinhood as r
 def login(login_credentials_file):
     with open(login_credentials_file) as reader:
         login_list = reader.readlines()
-        n = -1
-        for each in login_list:
-            n = n + 1
+        for n in range(len(login_list)):
             login_list[n] = login_list[n].strip("\n")
         login_var = r.login(login_list[0], login_list[1], "80000")
         print(login_var)
@@ -16,9 +14,7 @@ def login(login_credentials_file):
 def get_stocks():
     stocks = r.get_top_100()
     tickers = []
-    number = -1
-    for list_of_data in stocks:
-        number += 1
+    for number in range(len(stocks)):
         for element in stocks[0]:
             if element == "symbol":
                 tickers.append(stocks[number][element])
@@ -28,9 +24,7 @@ def get_stocks():
 def get_stocks_from_file(file_name):
     with open(file_name) as reader:
         stock_list = reader.readlines()
-        n = -1
-        for each in stock_list:
-            n = n + 1
+        for n in range(len(stock_list)):
             stock_list[n] = stock_list[n].strip("\n")
         return stock_list
 
