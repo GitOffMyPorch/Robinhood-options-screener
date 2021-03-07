@@ -2,7 +2,7 @@
 Screens options data to find the best options to sell for theta-gangers, works for cash-secured-puts and covered-calls. 
 
 * Gets the "percent win" which is the percent return on the money it would require to secure a put or cover a call (Ex: premium received / cash required to buy 100 shares or secure a put = percent win). 
-* Gets the probability of the trade going south i.e. "Probability Lose" using delta as a probability indicator. 
+* Gets the probability of the trade going south i.e. "Probability Lose" using delta as a probability indicator (only picks stocks that have a 15% chance or less of going south). 
 * Gets the strike price of the option to sell. 
 * Gets the option contract price per share. 
 * Gets the price of the stock. 
