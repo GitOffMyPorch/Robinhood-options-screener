@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import robin_stocks.robinhood as r
 
 
@@ -93,7 +92,7 @@ def print_option_data(delta_and_win_percent):
         percent_win = round(
             (
                 float(delta_and_win_percent[stock][0])
-                / float(delta_and_win_percent[stock][2])
+                / float(delta_and_win_percent[stock][3])
             )
             * 100,
             2,
@@ -148,3 +147,4 @@ elif calls_or_puts == "2":
 else:
     print("An Error Has Occurred")
 print_option_data(options_data)
+input("Press enter to quit")
